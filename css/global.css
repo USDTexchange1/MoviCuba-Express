@@ -1,0 +1,125 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ===== Header / Navbar ===== */
+header {
+  background-color: #008CBA;
+  padding: 15px;
+  color: white;
+}
+header h1 {
+  display: inline;
+  margin-right: 30px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ===== Botones ===== */
+button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #005f75;
+}
+
+/* ===== Inputs ===== */
+input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Links ===== */
+a {
+  color: #008CBA;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Contenedores de productos ===== */
+#productos, #listaCarrito, #listaPedidos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Notificaciones (toast) ===== */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008CBA;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 100;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+  }
