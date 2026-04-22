@@ -1,2 +1,2 @@
-
+hzjdjksjDespués puedes subir las imágenes reales dentro de img/ y eliminar placeholder.txt si quieres.
 esta carpera esa para imagenes 
